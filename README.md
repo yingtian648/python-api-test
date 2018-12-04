@@ -21,7 +21,7 @@
 4.method 是请求方法，如果cases中有method,则执行此method，否则执行最外层的method,最外层也没有method，则去以“GET”方式请求接口<br>
 5.automationCase 自动化交叉测试用例【暂未实现】<br>
 以下是一个完整的测试用例<br>
-... 
+```
 {
   "url": "/signIn/getSignIn",
   "header": {
@@ -47,4 +47,4 @@
     }
   ]
 }
-...
+```
