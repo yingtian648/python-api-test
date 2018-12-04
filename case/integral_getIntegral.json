@@ -1,0 +1,71 @@
+{
+  "url": "/integral/getIntegralDetail",
+  "header": {
+  },
+  "method": "GET",
+  "cases": [
+    {
+      "params": {
+        "publicId": "oVIDC1HH7C3_YyM4u99YE9ZEZVSM",
+        "userId": "1768"
+      }
+    },
+    {
+      "params": {
+        "publicId": "oVIDC1HH7C3_YyM4u99YE9ZEZVSM",
+        "userId": "1768",
+        "page": "",
+        "pageSize": ""
+      }
+    },
+    {
+      "params": {
+        "publicId": "oVIDC1HH7C3_YyM4u99YE9ZEZVSM",
+        "userId": "1768",
+        "page": "g",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "publicId": "oVIDC1HH7C3_YyM4u99YE9ZEZVSM",
+        "userId": "1768",
+        "page": "1",
+        "pageSize": "w"
+      }
+    },
+    {
+      "params": {
+        "publicId": "34535",
+        "userId": "0000",
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "publicId": "",
+        "userId": "1768",
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "publicId": "oVIDC1HH7C3_YyM4u99YE9ZEZVSM",
+        "userId": "",
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "publicId": "驱蚊器翁",
+        "userId": "背景无人能及沃尔",
+        "page": "1",
+        "pageSize": "10"
+      }
+    }
+  ]
+}
+

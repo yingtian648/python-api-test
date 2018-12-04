@@ -1,0 +1,26 @@
+{
+  "url": "/signIn/getSignIn",
+  "header": {
+    "Authorization": "MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==",
+    "Content-Type": "application/json"
+  },
+  "method": "POST",
+  "automationCase": {
+    "header":{},
+    "method":{},
+    "params":{
+      "evId":["197363018554679296","1212",1112],
+      "fileNumber":["11111",22222]
+    }
+  },
+  "cases": [
+    {
+      "method": "POST",
+      "params": {
+        "evId": "197363018554679296",
+        "fileNumber": "1111"
+      }
+    }
+  ]
+}
+

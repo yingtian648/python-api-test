@@ -1,0 +1,18 @@
+{
+  "url": "/signIn/addSignIn",
+  "header": {
+    "Authorization": "MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==",
+    "Content-Type": "application/json"
+  },
+  "method": "POST",
+  "cases": [
+    {
+      "method": "POST",
+      "params": {
+        "consumeRecord": "10"
+      }
+    }
+  ]
+}
+
+
