@@ -10,5 +10,6 @@
 case_files = [
     # "./case/test_dir/demo.json",
     # "./case/integral_getIntegral.json"
-    "./case/test_case.json",
+    # "./case/test_case.json",
+    "./case/getEvList.json",
 ]

@@ -55,9 +55,17 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
         if "method" in case.keys() and case['method']:
             base_method = case['method']
         params = None
+        # 获取参数
         if "params" in case.keys() and case['params']:
             params = case['params']
-        req_api(url, base_method, base_header, params)
+        # 单个用例重复测试次数
+        if ("repeat" in case.keys()) and (str(case['repeat']) != None) and \
+                str(case['repeat']).isdigit() and \
+                case['repeat'] > 0:
+            for i in range(case['repeat']):
+                req_api(url, base_method, base_header, params)
+        else:
+            req_api(url, base_method, base_header, params)
 
 
 # 请求接口

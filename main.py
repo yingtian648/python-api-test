@@ -13,8 +13,7 @@ BASE_METHOD = "GET"
 
 # "Content-Type": "application/json"
 BASE_HEADER = {
-    "Authorization": "MTc2OF90b2tlbl8xNTQzMzk4NzEzMDUyLCwsMTU0MzM5ODcxMzA1Mg==",
-    "tokenStr": "MTc2OF90b2tlbl8xNTQzMjg1MjAyMDU3LCwsMTU0MzI4NTIwMjA1Nw==",
+    "Authorization": "MTc2OF90b2tlbl8xNTQ0MDY0Mzc5MDI0LCwsMTU0NDA2NDM3OTAyNA==",
 }
 
 if __name__ == '__main__':

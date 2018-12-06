@@ -1,0 +1,20 @@
+{
+  "url": "/elevator/getEvList",
+  "header": {
+  },
+  "method": "GET",
+  "automationCase": {
+  },
+  "cases": [
+    {
+      "repeat": 10,
+      "params": {
+        "projectName": "中",
+        "cityId": "2282",
+        "page": "1",
+        "pageSize": "20"
+      }
+    }
+  ]
+}
+

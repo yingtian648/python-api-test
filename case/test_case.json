@@ -15,6 +15,7 @@
   },
   "cases": [
     {
+      "repeat":10,
       "method": "POST",
       "params": {
         "evId": "197363018554679296",

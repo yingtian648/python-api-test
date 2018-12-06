@@ -14,12 +14,13 @@
 ### 运行
 1.运行main.py<br>
 #【测试用例文件，详见case/test_dir中的demo.json文件】
-1.url 如果测试用例中url以“http://”或“https://”开头，这在执行用例时则不会去拼接main.py中的BASE_URL,不含有，则会拼接在main.py中的BASE_URL的后面去请求<br>
-2.header 如果测试用例中有header会以字典的update方式合并到main.py中的BASE_HEADER里面【header包含"Content-Type": "application/json"则默认POST请求参数是json字符串，
+1.url[str] 如果测试用例中url以“http://”或“https://”开头，这在执行用例时则不会去拼接main.py中的BASE_URL,不含有，则会拼接在main.py中的BASE_URL的后面去请求<br>
+2.header[dict] 如果测试用例中有header会以字典的update方式合并到main.py中的BASE_HEADER里面【header包含"Content-Type": "application/json"则默认POST请求参数是json字符串，
 以json字符串的方式去请求，否则默认POST方式请求参数是map】<br>
-3.cases 是测试用例列表<br>
-4.method 是请求方法，如果cases中有method,则执行此method，否则执行最外层的method,最外层也没有method，则去以“GET”方式请求接口<br>
-5.automationCase 自动化交叉测试用例【暂未实现】<br>
+3.cases[list] 是测试用例列表<br>
+4.method[str] 是请求方法，如果cases中有method,则执行此method，否则执行最外层的method,最外层也没有method，则去以“GET”方式请求接口<br>
+5.automationCase[dict] 自动化交叉测试用例【暂未实现】<br>
+5.repeat[int] 测试用例重复测试次数<br>
 以下是一个完整的测试用例<br>
 ```
 {
@@ -40,6 +41,7 @@
   "cases": [
     {
       "method": "POST",
+      "repeat": 10,
       "params": {
         "evId": "197363018554679296",
         "fileNumber": "1111"
