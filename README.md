@@ -9,7 +9,7 @@
 1.manifest.py  ——  测试用例注册文件【所有测试用例文件路径注册到这里】 —— 是运行时首先会根据此文件去查询测试用例，再去循环执行测试用例<br>
 2.case —— 测试用例文件根目录【所有测试用例文件[json文件]放置在这里】<br>
 3.用例json文件[详见以下“测试用例文件”]<br>
-4.main.py —— 执行测试的入口文件，这里可以配置请求的“接口地址”“header”“请求方法GET\POST”【需要将BASE_URL改成自己需要测试的接口地址】<br>
+4.main.py —— 执行测试的入口文件，这里可以配置请求的“BASE_URL == 接口地址”“BASE_HEADER == 请求头”“BASE_METHOD == 请求方法GET\POST”【需要将BASE_URL改成自己需要测试的接口地址】,“SUCCESS_CODE == 请求接口后判断是否请求成功的code”<br>
 5.test_log.txt —— 测试过程中的日志会写入此文件<br>
 ### 运行
 1.运行main.py<br>
