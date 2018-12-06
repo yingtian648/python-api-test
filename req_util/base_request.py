@@ -8,6 +8,7 @@ from urllib.parse import quote, urlencode
 import json, time
 from req_util.log_util import log
 
+
 def post_api(url, params: dict, header: dict, post_body: dict):
     """
     尝试POST方式请求接口
@@ -38,15 +39,17 @@ def get_api(url, params: dict, header: dict):
         for key in params.keys():
             if params[key]:
                 if not get_params:
-                    get_params = "?" + quote(key, safe='/', encoding='utf-8', errors=None) + "=" + quote(params[key],
-                                                                                                         safe='/',
-                                                                                                         encoding='utf-8',
-                                                                                                         errors=None)
+                    get_params = "?" + quote(key, safe='/', encoding='utf-8', errors=None) + "=" + quote(
+                        str(params[key]),
+                        safe='/',
+                        encoding='utf-8',
+                        errors=None)
                 else:
-                    get_params += "&" + quote(key, safe='/', encoding='utf-8', errors=None) + "=" + quote(params[key],
-                                                                                                          safe='/',
-                                                                                                          encoding='utf-8',
-                                                                                                          errors=None)
+                    get_params += "&" + quote(key, safe='/', encoding='utf-8', errors=None) + "=" + quote(
+                        str(params[key]),
+                        safe='/',
+                        encoding='utf-8',
+                        errors=None)
     if get_params:
         url += get_params
     if header:
