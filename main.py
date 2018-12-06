@@ -7,7 +7,6 @@ from req_util.api_option import find_case_to_test
 
 # 默认测试地址
 BASE_URL = 'http://172.16.2.74:8080'
-# BASE_URL = 'http://api.t4.2012iot.com'
 # 默认请求方法
 BASE_METHOD = "GET"
 

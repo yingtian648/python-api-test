@@ -7,6 +7,7 @@ from req_util.base_request import get_api, post_api
 from manifest import case_files
 from req_util.log_util import log
 import datetime
+import time
 
 
 # 从注册文件中读取测试用例文件
@@ -15,7 +16,8 @@ def find_case_to_test(base_url, base_header, base_method):
         log("\n****************** 未发现需要测试的文件 ******************\n")
         return
     log(str(datetime.datetime.now()))
-    log("--- 测试开始 --- ")
+    log("--------- 测试开始 --------- ")
+    t1 = time.time()
     for api_case in case_files:
         log("****************** " + api_case + " ******************\n")
         try:
@@ -30,7 +32,8 @@ def find_case_to_test(base_url, base_header, base_method):
             log("json格式错误：" + str(exj))
             continue
         make_test_detail(content, base_url, base_header, base_method)
-    log("\n--- 测试完成 ---")
+    t2 = time.time()
+    log("\n--------- 测试完成 总耗时:" + str(t2 - t1) + "毫秒 ---------")
 
 
 # 构造测试
