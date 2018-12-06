@@ -47,16 +47,16 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
     else:
         url = base_url + case_info['url']
     # 将文件中header添加到base_header中
-    if "header" in case_info.keys() and case_info['header']:
+    if "header" in case_info.keys() and case_info['header'] != None:
         base_header.update(case_info['header'])
-    if "method" in case_info.keys() and case_info['method']:
+    if "method" in case_info.keys() and case_info['method'] != None:
         base_method = case_info['method']
     for case in case_info['cases']:
-        if "method" in case.keys() and case['method']:
+        if "method" in case.keys() and case['method'] != None:
             base_method = case['method']
         params = None
         # 获取参数
-        if "params" in case.keys() and case['params']:
+        if "params" in case.keys() and case['params'] != None:
             params = case['params']
         # 单个用例重复测试次数
         if ("repeat" in case.keys()) and (str(case['repeat']) != None) and \
