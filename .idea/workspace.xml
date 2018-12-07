@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa46dab-6e4f-4047-a3c3-5df0d7d7406c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/req_util/base_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/req_util/base_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,17 +14,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/api_test$main.coverage" NAME="main Coverage Results" MODIFIED="1544077776852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/api_test$main.coverage" NAME="main Coverage Results" MODIFIED="1544164336542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="489360398">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,7 +32,7 @@
           <entry key="README" value="1" />
           <entry key="json" value="4" />
           <entry key="md" value="2" />
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
@@ -39,23 +41,23 @@
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="91" />
           <entry key="md" value="151" />
-          <entry key="py" value="462" />
-          <entry key="txt" value="3" />
+          <entry key="py" value="491" />
+          <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="91" />
           <entry key="Markdown" value="151" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="462" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="491" />
         </counts>
       </usages-collector>
     </session>
@@ -65,15 +67,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="11" selection-start-line="15" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="400">
+              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_log.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -94,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -114,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/req_util/api_option.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="225">
               <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
               <folding>
                 <element signature="e#99#150#0" expanded="true" />
@@ -123,14 +127,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/req_util/base_request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+            <state relative-caret-position="330">
+              <caret line="83" column="65" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
               <folding>
                 <element signature="e#100#143#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/req_util/log_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -145,11 +158,11 @@
       <list>
         <option value="$PROJECT_DIR$/case/test_case.json" />
         <option value="$PROJECT_DIR$/manifest.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/req_util/api_option.py" />
-        <option value="$PROJECT_DIR$/req_util/base_request.py" />
         <option value="$PROJECT_DIR$/test_log.txt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/req_util/base_request.py" />
       </list>
     </option>
   </component>
@@ -256,13 +269,21 @@
       <option name="presentableId" value="Default" />
       <updated>1543904696416</updated>
     </task>
+    <task id="LOCAL-00001" summary="修复cases中参数为数字出错的bug">
+      <created>1544090110955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544090110955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2622108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26863754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,6 +312,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修复cases中参数为数字出错的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复cases中参数为数字出错的bug" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/manifest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -302,13 +327,6 @@
     <entry file="file://$PROJECT_DIR$/case/integral_getIntegral.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-750" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/req_util/log_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/test_case.json">
@@ -325,40 +343,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_dir/demo.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/req_util/api_option.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <element signature="e#99#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/req_util/base_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="76" column="48" lean-forward="true" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
-          <folding>
-            <element signature="e#100#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="11" selection-start-line="15" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="275">
@@ -367,7 +353,48 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_dir/demo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req_util/api_option.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+          <folding>
+            <element signature="e#99#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req_util/log_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req_util/base_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="83" column="65" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+          <folding>
+            <element signature="e#100#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
