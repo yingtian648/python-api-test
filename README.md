@@ -13,7 +13,7 @@
 5.test_log.txt —— 测试过程中的日志会写入此文件<br>
 ### 运行
 1.运行main.py<br>
-### 【测试用例文件，详见case/test_dir中的demo.json文件】
+### 附:测试用例文件，详见case/test_dir中的demo.json文件
 1.url[str] 如果测试用例中url以“http://”或“https://”开头，这在执行用例时则不会去拼接main.py中的BASE_URL,不含有，则会拼接在main.py中的BASE_URL的后面去请求<br>
 2.header[dict] 如果测试用例/单个测试用例中有header会以字典的update方式合并到main.py中的BASE_HEADER里面【header包含"Content-Type": "application/json"则默认POST请求参数是json字符串，
 以json字符串的方式去请求，否则默认POST方式请求参数是map】【单个测试用例中的header >> 测试用例最外层header >> main.py中的BASE_HEADER】<br>
