@@ -6,11 +6,14 @@
 
 # 打印日志 输出到文档
 def log(msg: str):
+    if msg is None:
+        return
     print(msg)
     write_into_file(msg)
 
+
 # 写入文档
-def write_into_file(msg):
+def write_into_file(msg: str):
     file = open("test_log.txt", "a", encoding='utf-8', errors='ignore')
     file.write(msg + "\n")
     file.close()

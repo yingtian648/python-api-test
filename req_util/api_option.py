@@ -12,7 +12,7 @@ import time
 
 # 从注册文件中读取测试用例文件
 def find_case_to_test(base_url, base_header, base_method):
-    if case_files == None or not isinstance(case_files, list) or len(case_files) == 0:
+    if case_files is None or not isinstance(case_files, list) or len(case_files) == 0:
         log("\n****************** 未发现需要测试的文件 ******************\n")
         return
     log(str(datetime.datetime.now()))

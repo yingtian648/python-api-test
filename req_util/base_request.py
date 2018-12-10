@@ -35,7 +35,7 @@ def get_api(url, params: dict, header: dict):
     :return:
     """
     get_params = None
-    if params:
+    if params is not None:
         for key in params.keys():
             if params[key]:
                 if not get_params:
@@ -50,9 +50,9 @@ def get_api(url, params: dict, header: dict):
                         safe='/',
                         encoding='utf-8',
                         errors=None)
-    if get_params:
+    if get_params is not None:
         url += get_params
-    if header:
+    if header is not None:
         req = Request(url=url, headers=header, method='GET')
     else:
         req = Request(url=url, method='GET')
