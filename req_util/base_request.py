@@ -37,7 +37,7 @@ def get_api(url, params: dict, header: dict):
     get_params = None
     if params is not None:
         for key in params.keys():
-            if params[key]:
+            if params[key] is not None:
                 if not get_params:
                     get_params = "?" + quote(key, safe='/', encoding='utf-8', errors=None) + "=" + quote(
                         str(params[key]),
