@@ -16,6 +16,7 @@
   "cases": [
     {
       "repeat":10,
+      "header": {"token":"SAHDJASHDAHSQUWUISDJASJDAJ=="},
       "method": "POST",
       "params": {
         "evId": "197363018554679296",

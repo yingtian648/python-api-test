@@ -49,20 +49,23 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
         url = case_info['url']
     else:
         url = base_url + case_info['url']
-    # 将文件中header添加到base_header中
-    if "header" in case_info.keys() and case_info['header'] != None:
+    # 将文件中header更新到base_header中
+    if "header" in case_info.keys() and case_info['header'] is not None:
         base_header.update(case_info['header'])
-    if "method" in case_info.keys() and case_info['method'] != None:
+    if "method" in case_info.keys() and case_info['method'] is not None:
         base_method = case_info['method']
     for case in case_info['cases']:
-        if "method" in case.keys() and case['method'] != None:
+        if "method" in case.keys() and case['method'] is not None:
             base_method = case['method']
         params = None
         # 获取参数
-        if "params" in case.keys() and case['params'] != None:
+        if "params" in case.keys() and case['params'] is not None:
             params = case['params']
+        # 将单个用例中的header更新到base_header中
+        if "header" in case.keys() and case['header'] is not None:
+            base_header.update(case['header'])
         # 单个用例重复测试次数
-        if ("repeat" in case.keys()) and (str(case['repeat']) != None) and \
+        if ("repeat" in case.keys()) and (str(case['repeat']) is not None) and \
                 isinstance(case['repeat'], int) and \
                 case['repeat'] > 0:
             for i in range(case['repeat']):
