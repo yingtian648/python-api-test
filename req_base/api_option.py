@@ -3,37 +3,36 @@
 # Time : 2018/11/30 9:32
 # Author : LiuShiHua
 # Desc :
-from req_util.base_request import get_api, post_api
-from manifest import case_files
-from req_util.log_util import log
-import datetime
-import time
+from req_base.base_request import get_api, post_api
+from util.file_util import get_case_jsonfile_name
+from util.log_util import log
+import os, time, datetime
 
 
 # 从注册文件中读取测试用例文件
-def find_case_to_test(base_url, base_header, base_method):
-    if case_files is None or not isinstance(case_files, list) or len(case_files) == 0:
-        log("\n****************** 未发现需要测试的文件 ******************\n")
+def check_case_file_to_test(parent_dir: str, api_case_str: str, base_url: str, base_header: dict, base_method: str):
+    """
+    单个测试文件校验并测试
+    :param parent_dir:
+    :param api_case_str:
+    :param base_url:
+    :param base_header:
+    :param base_method:
+    :return:
+    """
+    try:
+        os.chdir(parent_dir)
+        log("\n****************** START " + api_case_str + " ******************\n")
+        file = open(get_case_jsonfile_name(api_case_str), "r", encoding='utf-8', errors='ignore')
+    except Exception as ex:
+        log("manifest错误：" + str(ex))
+    content = file.read()
+    try:
+        content = eval(content)
+    except Exception as exj:
+        log("json格式错误：" + str(exj))
         return
-    log(str(datetime.datetime.now()))
-    log("--------- 测试开始 --------- ")
-    t1 = time.time()
-    for api_case in case_files:
-        log("****************** " + api_case + " ******************\n")
-        try:
-            file = open(api_case, "r", encoding='utf-8', errors='ignore')
-        except Exception as ex:
-            log("manifest错误：" + str(ex))
-            continue
-        content = file.read()
-        try:
-            content = eval(content)
-        except Exception as exj:
-            log("json格式错误：" + str(exj))
-            continue
-        make_test_detail(content, base_url, base_header, base_method)
-    t2 = time.time()
-    log("\n--------- 测试完成 总耗时:" + str(t2 - t1) + "毫秒 ---------")
+    make_test_detail(content, base_url, base_header, base_method)
 
 
 # 构造测试
@@ -56,6 +55,7 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
         base_method = case_info['method']
     average_total_time = 0  # 单个请求消耗时长累计值
     req_times = 0  # 单个有效请求次数
+    req_times_error = 0  # 单个无效请求次数
     for case in case_info['cases']:
         if "method" in case.keys() and case['method'] is not None:
             base_method = case['method']
@@ -75,13 +75,20 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
                 if user_time != -1:
                     average_total_time = average_total_time + user_time
                     req_times = req_times + 1
+                else:
+                    req_times_error = req_times_error + 1
         else:
             user_time_1 = req_api(url, base_method, base_header, params)
             if user_time_1 != -1:
                 average_total_time = average_total_time + user_time_1
                 req_times = req_times + 1
-    if req_times>0:
-        log("\n****************** " + case_info['url'] + " 平均请求时长:" + str(average_total_time / req_times) + "毫秒 ******************")
+            else:
+                req_times_error = req_times_error + 1
+    average_t = 0
+    if req_times > 0:
+        average_t = round((average_total_time / req_times), 8)
+    log("\n****************** END 总耗时:" + str(round(average_total_time, 8)) + " 平均请求时长:" + str(
+        average_t) + "毫秒 有效请求" + str(req_times) + "次 无效请求" + str(req_times_error) + "次 ******************")
 
 
 # 请求接口

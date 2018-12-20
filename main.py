@@ -3,7 +3,7 @@
 # Time : 2018/11/29 14:16
 # Author : LiuShiHua
 # Desc :
-from req_util.api_option import find_case_to_test
+from util.find_case_util import find_case_to_test
 
 # 默认测试地址
 BASE_URL = 'http://172.16.2.74:8080'

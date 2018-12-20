@@ -6,7 +6,7 @@
 from urllib.request import Request, urlopen
 from urllib.parse import quote, urlencode
 import json, time
-from req_util.log_util import log
+from util.log_util import log
 
 
 def post_api(url, params: dict, header: dict, post_body: dict):
