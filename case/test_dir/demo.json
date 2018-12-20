@@ -1,5 +1,5 @@
 {
-  "url": "/signIn/addSignIn",
+  "url": "/api-login/login",
   "header": {
     "Authorization": "MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==",
     "Content-Type": "application/json"
@@ -9,7 +9,9 @@
     {
       "method": "POST",
       "params": {
-        "consumeRecord": "10"
+        "username": "121212",
+        "password": "11111111",
+        "type": 3
       }
     }
   ]

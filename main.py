@@ -14,7 +14,7 @@ SUCCESS_CODE = 0
 
 # "Content-Type": "application/json"
 BASE_HEADER = {
-    "Authorization": "MTc2OF90b2tlbl8xNTQ0MTYyNDk4NTgyLCwsMTU0NDE2MjQ5ODU4Mg==",
+    "Authorization": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDUyNzI2NjYxNjk=",
 }
 
 if __name__ == '__main__':

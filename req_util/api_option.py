@@ -54,6 +54,8 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
         base_header.update(case_info['header'])
     if "method" in case_info.keys() and case_info['method'] is not None:
         base_method = case_info['method']
+    average_total_time = 0  # 单个请求消耗时长累计值
+    req_times = 0  # 单个有效请求次数
     for case in case_info['cases']:
         if "method" in case.keys() and case['method'] is not None:
             base_method = case['method']
@@ -69,14 +71,25 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
                 isinstance(case['repeat'], int) and \
                 case['repeat'] > 0:
             for i in range(case['repeat']):
-                req_api(url, base_method, base_header, params)
+                user_time = req_api(url, base_method, base_header, params)
+                if user_time != -1:
+                    average_total_time = average_total_time + user_time
+                    req_times = req_times + 1
         else:
-            req_api(url, base_method, base_header, params)
+            user_time_1 = req_api(url, base_method, base_header, params)
+            if user_time_1 != -1:
+                average_total_time = average_total_time + user_time_1
+                req_times = req_times + 1
+    if req_times>0:
+        log("\n****************** " + case_info['url'] + " 平均请求时长:" + str(average_total_time / req_times) + "毫秒 ******************")
 
 
 # 请求接口
 def req_api(url, method: str, header, params):
     if method.upper() == "POST":
-        post_api(url=url, params=params, header=header, post_body=params)
-    if method.upper() == "GET":
-        get_api(url=url, params=params, header=header)
+        return post_api(url=url, params=params, header=header, post_body=params)
+    elif method.upper() == "GET":
+        return get_api(url=url, params=params, header=header)
+    else:
+        log("请求方法method非GET/POST")
+        return -1

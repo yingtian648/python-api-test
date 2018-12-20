@@ -16,14 +16,14 @@ def post_api(url, params: dict, header: dict, post_body: dict):
     :param params:
     :param header:
     :param post_body:
-    :return:
+    :return:请求消耗时长
     """
     if header and "Content-Type" in header.keys() and header['Content-Type'] == 'application/json':  # 请求参数是json
         req = Request(url=url, data=json.dumps(post_body).encode('utf-8'), headers=header, method='POST')
     else:  # 请求参数是map
         params = urlencode(params).encode('utf-8')  # 编码请求参数
         req = Request(url=url, data=params, headers=header, method='POST')
-    process_result(url, req, params, header, "POST")
+    return process_result(url, req, params, header, "POST")
 
 
 def get_api(url, params: dict, header: dict):
@@ -32,7 +32,7 @@ def get_api(url, params: dict, header: dict):
     :param url:
     :param params: quote(params[key], safe='/', encoding='utf-8', errors=None) 防止中文编码错误问题
     :param header:
-    :return:
+    :return:请求消耗时长
     """
     get_params = None
     if params is not None:
@@ -56,21 +56,23 @@ def get_api(url, params: dict, header: dict):
         req = Request(url=url, headers=header, method='GET')
     else:
         req = Request(url=url, method='GET')
-    process_result(url, req, params, header, "GET")
+    return process_result(url, req, params, header, "GET")
 
 
 def process_result(url, req, params, header, methodStr):
     from main import SUCCESS_CODE  # 请求成功的返回code
     """
-    处理请求返回结果
+    处理请求 打印结果 返回消耗时长
     :param req:
-    :return:
+    :return:请求消耗时长
     """
     result_content = None
+    tottime_long = -1
     try:
         t1 = time.time()
         result_content = urlopen(req).read().decode('utf-8')
-        tottime = ("use_tottime: " + str(time.time() - t1)) + " ms"
+        tottime_long = time.time() - t1
+        tottime_str = ("use_time: " + str(tottime_long)) + " ms"
         result_content = json.loads(result_content)
         if result_content['code'] and not result_content['code'] == SUCCESS_CODE:
             log('------ Failure ------')
@@ -80,7 +82,7 @@ def process_result(url, req, params, header, methodStr):
             log('request_params:' + str(params))
             log('response:' + str(result_content))
         else:
-            log('------ Success ' + tottime + ' ------')
+            log('------ Success ' + tottime_str + ' ------')
             log(json.dumps(result_content, indent=2))  # 美化json输出
 
     except Exception as excp:
@@ -91,3 +93,4 @@ def process_result(url, req, params, header, methodStr):
         log('request_params:' + str(params))
         log('response:' + str(result_content))
         log('error:' + str(excp))
+    return tottime_long
