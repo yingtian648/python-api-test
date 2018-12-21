@@ -3,9 +3,11 @@
 # Time : 2018/11/29 14:16
 # Author : LiuShiHua
 # Desc :
-from util.find_case_util import find_case_to_test
+
 
 # 默认测试地址
+from util.find_case_util import find_case_file_to_test
+
 BASE_URL = 'http://172.16.2.74:8080'
 # 默认请求方法
 BASE_METHOD = "GET"
@@ -18,4 +20,4 @@ BASE_HEADER = {
 }
 
 if __name__ == '__main__':
-    find_case_to_test(BASE_URL, BASE_HEADER, BASE_METHOD)
+    find_case_file_to_test(BASE_URL, BASE_HEADER, BASE_METHOD)

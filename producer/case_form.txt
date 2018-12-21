@@ -1,0 +1,4 @@
+"./case/test-case/_elevator_getEvList.json",
+"./case/test-case/_signIn_getSignIn.json",
+"./case/test-case/_testCase.json",
+"./case/base/_testCase.json",

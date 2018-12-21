@@ -3,37 +3,9 @@
 # Time : 2018/11/30 9:32
 # Author : LiuShiHua
 # Desc :
+from manifest import case_files
 from req_base.base_request import get_api, post_api
-from util.file_util import get_case_jsonfile_name
 from util.log_util import log
-import os, time, datetime
-
-
-# 从注册文件中读取测试用例文件
-def check_case_file_to_test(parent_dir: str, api_case_str: str, base_url: str, base_header: dict, base_method: str):
-    """
-    单个测试文件校验并测试
-    :param parent_dir:
-    :param api_case_str:
-    :param base_url:
-    :param base_header:
-    :param base_method:
-    :return:
-    """
-    try:
-        os.chdir(parent_dir)
-        log("\n****************** START " + api_case_str + " ******************\n")
-        file = open(get_case_jsonfile_name(api_case_str), "r", encoding='utf-8', errors='ignore')
-    except Exception as ex:
-        log("manifest错误：" + str(ex))
-    content = file.read()
-    try:
-        content = eval(content)
-    except Exception as exj:
-        log("json格式错误：" + str(exj))
-        return
-    make_test_detail(content, base_url, base_header, base_method)
-
 
 # 构造测试
 def make_test_detail(case_info: dict, base_url, base_header, base_method):
@@ -48,6 +20,7 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
         url = case_info['url']
     else:
         url = base_url + case_info['url']
+    log("\n****************** START " + url + " ******************\n")
     # 将文件中header更新到base_header中
     if "header" in case_info.keys() and case_info['header'] is not None:
         base_header.update(case_info['header'])

@@ -1,33 +1,11 @@
 {
-  "url": "/elevator/getEvList",
-  "header": {
-  },
+  "url": "/test-case/elevator/getEvList",
+  "header": {},
   "method": "GET",
-  "automationCase": {
-  },
   "cases": [
     {
-      "repeat": 1,
-      "header": {
-        "time":"2018-12-10 12:00"
-      },
       "params": {
-        "projectName": "中",
-        "cityId": "2282",
-        "page": "1",
-        "pageSize": "20"
-      }
-    },
-    {
-      "repeat": 1,
-      "header": {
-        "time":"2018-12-10 18:00"
-      },
-      "params": {
-        "projectName": "中",
-        "cityId": "2282",
-        "page": "1",
-        "pageSize": "20"
+        "key": "value"
       }
     }
   ]

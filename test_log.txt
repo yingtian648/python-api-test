@@ -1,0 +1,103 @@
+2018-12-21 10:20:28.585821
+--------- 测试开始 --------- 
+
+****************** START http://172.16.2.74:8080/signIn/getSignIn ******************
+
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+------ Failure ------
+request_url:http://172.16.2.74:8080/signIn/getSignIn
+request_method:POST
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'evId': '197363018554679296', 'fileNumber': '1111'}
+response:{'code': 3008, 'message': '登录过期', 'obj': {}, 'tokenStr': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng=='}
+
+****************** END 总耗时:0.14040017 平均请求时长:0.01404002毫秒 有效请求10次 无效请求0次 ******************
+
+****************** START http://172.16.2.74:8080/test-case/elevator/getEvList ******************
+
+------ Exception ------
+request_url:http://172.16.2.74:8080/test-case/elevator/getEvList?key=value
+request_method:GET
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'key': 'value'}
+response:None
+error:HTTP Error 404: NOT FOUND
+
+****************** END 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求1次 ******************
+
+****************** START http://172.16.2.74:8080/test-case/signIn/getSignIn ******************
+
+------ Exception ------
+request_url:http://172.16.2.74:8080/test-case/signIn/getSignIn?key=value
+request_method:GET
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'key': 'value'}
+response:None
+error:HTTP Error 404: NOT FOUND
+
+****************** END 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求1次 ******************
+
+****************** START http://172.16.2.74:8080/test-case/testCase ******************
+
+------ Exception ------
+request_url:http://172.16.2.74:8080/test-case/testCase?key=value
+request_method:GET
+request_header:{'Authorization': 'MTc2OF90b2tlbl8xNTQzNDgxNjk1OTY2LCwsMTU0MzQ4MTY5NTk2Ng==', 'Content-Type': 'application/json', 'token': 'SAHDJASHDAHSQUWUISDJASJDAJ=='}
+request_params:{'key': 'value'}
+response:None
+error:HTTP Error 404: NOT FOUND
+
+****************** END 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求1次 ******************
