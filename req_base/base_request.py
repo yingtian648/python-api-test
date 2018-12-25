@@ -75,18 +75,16 @@ def process_result(url, req, params, header, methodStr):
         tottime_str = ("use_time: " + str(tottime_long)) + " ms"
         result_content = json.loads(result_content)
         if result_content['code'] and not result_content['code'] == SUCCESS_CODE:
-            log('------ Failure ' + url + ' ------')
-            log('request_method:' + methodStr)
+            log('------ Failure ' + methodStr + ' ' + url + ' ------')
             log('request_header:' + str(header))
             log('request_params:' + str(params))
             log('response:' + str(result_content))
         else:
-            log('------ Success ' + url + ' ' + tottime_str + ' ------')
+            log('------ Success ' + methodStr + ' ' + url + ' ' + tottime_str + ' ------')
             log(json.dumps(result_content, indent=2))  # 美化json输出
 
     except Exception as excp:
-        log('------ Exception ' + url + ' ------')
-        log('request_method:' + methodStr)
+        log('------ Exception ' + methodStr + ' ' + url + ' ------')
         log('request_header:' + str(header))
         log('request_params:' + str(params))
         log('response:' + str(result_content))
