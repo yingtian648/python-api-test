@@ -11,3 +11,14 @@ test_case_list = [
     "/signIn/getSignIn",
     "/testCase",
 ]
+
+elevator_list = [
+    "/getEvList",
+    "/getWoEvList",
+    "/setEvAttention",
+    "/attentionEvList",
+    "/getEvDetail",
+    "/getEvParameter",
+    "/evShare",
+    "/scan",
+]

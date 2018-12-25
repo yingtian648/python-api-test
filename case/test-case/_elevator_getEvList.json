@@ -5,7 +5,18 @@
   "cases": [
     {
       "params": {
-        "key": "value"
+        "projectName":  "花",
+        "cityId": "2282",
+        "page": "222",
+        "pageSize": "222"
+      }
+    },
+    {
+      "params": {
+        "projectName": "花",
+        "cityId": 2282,
+        "page": "111sdas",
+        "pageSize": "222rfs"
       }
     }
   ]

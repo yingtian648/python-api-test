@@ -1,0 +1,12 @@
+{
+  "url": "/elevator/evShare",
+  "header": {},
+  "method": "GET",
+  "cases": [
+    {
+      "params": {
+        "key": "value"
+      }
+    }
+  ]
+}

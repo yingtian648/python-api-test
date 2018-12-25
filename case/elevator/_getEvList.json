@@ -1,0 +1,50 @@
+{
+  "url": "/elevator/getEvList",
+  "header": {
+  },
+  "method": "GET",
+  "cases": [
+    {
+      "params": {
+        "projectName": "花",
+        "cityId": "2282",
+        "page": 1,
+        "pageSize": 10
+      }
+    },
+    {
+      "params": {
+        "projectName": "花",
+        "cityId": "aaa",
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "cityId": "2282",
+        "page": "1",
+        "pageSize": "10"
+      }
+    },
+    {
+      "params": {
+        "projectName": "花",
+        "cityId": "2282"
+      }
+    },
+    {
+      "params": {
+        "projectName": "花",
+        "cityId": "2282",
+        "page": "a"
+      }
+    }
+  ]
+}

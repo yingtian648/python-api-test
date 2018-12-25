@@ -1,0 +1,12 @@
+{
+  "url": "/elevator/setEvAttention",
+  "header": {},
+  "method": "GET",
+  "cases": [
+    {
+      "params": {
+        "key": "value"
+      }
+    }
+  ]
+}
