@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fa46dab-6e4f-4047-a3c3-5df0d7d7406c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/base/_testCase.json" beforeDir="false" afterPath="$PROJECT_DIR$/case/base/_testCase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/elevator/_getEvDetail.json" beforeDir="false" afterPath="$PROJECT_DIR$/case/elevator/_getEvDetail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/req_base/api_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/req_base/api_option.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/req_base/base_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/req_base/base_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +52,7 @@
           <entry key="dummy" value="9" />
           <entry key="json" value="375" />
           <entry key="md" value="707" />
-          <entry key="py" value="2698" />
+          <entry key="py" value="2702" />
           <entry key="txt" value="67" />
         </counts>
       </usages-collector>
@@ -68,7 +61,7 @@
           <entry key="JSON" value="375" />
           <entry key="Markdown" value="707" />
           <entry key="PLAIN_TEXT" value="76" />
-          <entry key="Python" value="2698" />
+          <entry key="Python" value="2702" />
         </counts>
       </usages-collector>
     </session>
@@ -96,11 +89,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/req_base/api_option.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="65" column="46" lean-forward="true" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+            <state relative-caret-position="180">
+              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
               <folding>
                 <element signature="e#99#150#0" expanded="true" />
-                <marker date="1545817472354" expanded="true" signature="3207:3640" ph="..." />
+                <marker date="1545817586988" expanded="true" signature="3207:3644" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,8 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="450">
+              <caret line="18" column="80" lean-forward="true" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -664,19 +657,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/req_base/api_option.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="65" column="46" lean-forward="true" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        <state relative-caret-position="180">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
             <element signature="e#99#150#0" expanded="true" />
-            <marker date="1545817472354" expanded="true" signature="3207:3640" ph="..." />
+            <marker date="1545817586988" expanded="true" signature="3207:3644" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="450">
+          <caret line="18" column="80" lean-forward="true" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
         </state>
       </provider>
     </entry>

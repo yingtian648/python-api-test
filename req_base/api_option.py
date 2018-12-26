@@ -70,7 +70,7 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
 
 def do_cross_test_case(cross_params: dict, index=0, params={}, url=None, base_method=None, base_header=None):
     """
-    获取交叉测试的用例
+    获取交叉测试的用例[递归]
     :param crossTestParams:
     :return:
     """
