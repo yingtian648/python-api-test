@@ -2,11 +2,16 @@
   "url": "/elevator/getEvDetail",
   "header": {},
   "method": "GET",
+  "crossTestParams": {
+    "evId": [
+      9151,
+      "aaa"
+    ],
+    "evName": [
+      "AAA",
+      "BBB"
+    ]
+  },
   "cases": [
-    {
-      "params": {
-        "key": "value"
-      }
-    }
   ]
 }

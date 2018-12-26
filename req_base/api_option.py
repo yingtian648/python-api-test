@@ -3,17 +3,16 @@
 # Time : 2018/11/30 9:32
 # Author : LiuShiHua
 # Desc :
-from manifest import case_files
 from req_base.base_request import get_api, post_api
 from util.log_util import log
+
 
 # 构造测试
 def make_test_detail(case_info: dict, base_url, base_header, base_method):
     if not case_info or 'url' not in case_info.keys() \
             or not case_info['url'] \
             or "cases" not in case_info.keys() \
-            or not isinstance(case_info['cases'], list) \
-            or len(case_info['cases']) == 0:
+            or not isinstance(case_info['cases'], list):
         log("退出：接口地址或测试用例错误、测试用例不存在")
         return
     if case_info['url'].startswith("http://") or case_info['url'].startswith("https://"):
@@ -60,8 +59,28 @@ def make_test_detail(case_info: dict, base_url, base_header, base_method):
     average_t = 0
     if req_times > 0:
         average_t = round((average_total_time / req_times), 8)
-    log("\n****************** END 总耗时:" + str(round(average_total_time, 8)) + " 平均请求时长:" + str(
+    log("\n****************** END cases 总耗时:" + str(round(average_total_time, 8)) + " 平均请求时长:" + str(
         average_t) + "毫秒 有效请求" + str(req_times) + "次 无效请求" + str(req_times_error) + "次 ******************")
+    # 执行交叉参数测试
+    if "crossTestParams" in case_info.keys() and isinstance(case_info['crossTestParams'], dict) and len(
+            case_info['crossTestParams']) > 0:
+        do_cross_test_case(case_info['crossTestParams'], url=url, base_method=base_method, base_header=base_header)
+        log("\n****************** END crossTestParams ******************")
+
+
+def do_cross_test_case(cross_params: dict, index=0, params={}, url=None, base_method=None, base_header=None):
+    """
+    获取交叉测试的用例
+    :param crossTestParams:
+    :return:
+    """
+    ckeys = list(cross_params.keys())
+    for crp_child in cross_params[ckeys[index]]:  # 遍历字典中参数对应的参数列表
+        params.update({ckeys[index]: crp_child})
+        if index < (len(ckeys) - 1):
+            do_cross_test_case(cross_params, index + 1, params, url, base_method, base_header)
+        else:
+            req_api(url, base_method, base_header, params)
 
 
 # 请求接口

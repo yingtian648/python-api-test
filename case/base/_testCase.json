@@ -5,18 +5,23 @@
     "Content-Type": "application/json"
   },
   "method": "POST",
-  "automationCase": {
-    "header":{},
-    "method":{},
-    "params":{
-      "evId":["197363018554679296","1212",1112],
-      "fileNumber":["11111",22222]
-    }
+  "crossTestParams": {
+    "evId": [
+      "197363018554679296",
+      "1212",
+      1112
+    ],
+    "fileNumber": [
+      "11111",
+      22222
+    ]
   },
   "cases": [
     {
-      "repeat":10,
-      "header": {"token":"SAHDJASHDAHSQUWUISDJASJDAJ=="},
+      "repeat": 10,
+      "header": {
+        "token": "SAHDJASHDAHSQUWUISDJASJDAJ=="
+      },
       "method": "POST",
       "params": {
         "evId": "197363018554679296",

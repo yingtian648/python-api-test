@@ -81,6 +81,7 @@ def process_result(url, req, params, header, methodStr):
             log('response:' + str(result_content))
         else:
             log('------ Success ' + methodStr + ' ' + url + ' ' + tottime_str + ' ------')
+            log('request_params:' + str(params))
             log(json.dumps(result_content, indent=2))  # 美化json输出
 
     except Exception as excp:

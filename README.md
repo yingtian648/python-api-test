@@ -26,7 +26,7 @@
 以json字符串的方式去请求，否则默认POST方式请求参数是map】【单个测试用例中的header >> 测试用例最外层header >> main.py中的BASE_HEADER】<br>
 3.cases[list] 是测试用例列表<br>
 4.method[str] 是请求方法，如果cases中有method,则执行此method，否则执行最外层的method,最外层也没有method，则去以“GET”方式请求接口<br>
-5.automationCase[dict] 自动化交叉测试用例【暂未实现】<br>
+5.crossTestParams[dict] 自动化交叉测试参数[测试完cases中的用例之后执行]<br>
 6.repeat[int] 测试用例重复测试次数<br>
 以下是一个完整的测试用例<br>
 ```
@@ -37,13 +37,9 @@
     "Content-Type": "application/json"
   },
   "method": "POST",
-  "automationCase": {
-    "header":{},
-    "method":{},
-    "params":{
-      "evId":["197363018554679296","1212",1112],
-      "fileNumber":["11111",22222]
-    }
+  "crossTestParams": {
+     "evId":["197363018554679296","1212",1112],
+     "fileNumber":["11111",22222]
   },
   "cases": [
     {

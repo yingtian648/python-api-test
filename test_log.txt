@@ -1,0 +1,211 @@
+2018-12-26 17:40:52.246118
+--------- 测试开始 --------- 
+
+****************** START http://172.16.2.74:8080/elevator/getEvDetail ******************
+
+
+****************** END 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求0次 ******************
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=1951&evName=AAA use_time: 0.03500175476074219 ms ------
+request_params:{'evId': 9151, 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=1951&evName=BBB use_time: 0.02800130844116211 ms ------
+request_params:{'evId': 1951, 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=AAA use_time: 0.031001806259155273 ms ------
+request_params:{'evId': 'aaa', 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=BBB use_time: 0.03500175476074219 ms ------
+request_params:{'evId': 'aaa', 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+2018-12-26 17:41:48.018308
+--------- 测试开始 --------- 
+
+****************** START http://172.16.2.74:8080/elevator/getEvDetail ******************
+
+
+****************** END 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求0次 ******************
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=9151&evName=AAA use_time: 0.041002511978149414 ms ------
+request_params:{'evId': 9151, 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": {
+      "address": "\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u798f\u6c38\u8857\u9053\u798f\u6c38\u4e2d\u5fc3\u533a\u805a\u798f\u56ed\u4e00\u5df78\u53f7",
+      "attentionFlag": 2,
+      "attentionFlagName": "\u672a\u5173\u6ce8",
+      "buildAddr": "",
+      "evId": "9151",
+      "evOrder": "",
+      "name": "\u90ed\u8d3a\u658c",
+      "projectId": "1969",
+      "regCode": "31104403002008008448",
+      "wtCode": "00000002"
+    },
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=9151&evName=BBB use_time: 0.036002159118652344 ms ------
+request_params:{'evId': 9151, 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": {
+      "address": "\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u798f\u6c38\u8857\u9053\u798f\u6c38\u4e2d\u5fc3\u533a\u805a\u798f\u56ed\u4e00\u5df78\u53f7",
+      "attentionFlag": 2,
+      "attentionFlagName": "\u672a\u5173\u6ce8",
+      "buildAddr": "",
+      "evId": "9151",
+      "evOrder": "",
+      "name": "\u90ed\u8d3a\u658c",
+      "projectId": "1969",
+      "regCode": "31104403002008008448",
+      "wtCode": "00000002"
+    },
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=AAA use_time: 0.039002418518066406 ms ------
+request_params:{'evId': 'aaa', 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=BBB use_time: 0.03400158882141113 ms ------
+request_params:{'evId': 'aaa', 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+2018-12-26 17:44:38.092036
+--------- 测试开始 --------- 
+
+****************** START http://172.16.2.74:8080/elevator/getEvDetail ******************
+
+
+****************** END cases 总耗时:0 平均请求时长:0毫秒 有效请求0次 无效请求0次 ******************
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=9151&evName=AAA use_time: 0.06900405883789062 ms ------
+request_params:{'evId': 9151, 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": {
+      "address": "\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u798f\u6c38\u8857\u9053\u798f\u6c38\u4e2d\u5fc3\u533a\u805a\u798f\u56ed\u4e00\u5df78\u53f7",
+      "attentionFlag": 2,
+      "attentionFlagName": "\u672a\u5173\u6ce8",
+      "buildAddr": "",
+      "evId": "9151",
+      "evOrder": "",
+      "name": "\u90ed\u8d3a\u658c",
+      "projectId": "1969",
+      "regCode": "31104403002008008448",
+      "wtCode": "00000002"
+    },
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=9151&evName=BBB use_time: 0.04400229454040527 ms ------
+request_params:{'evId': 9151, 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": {
+      "address": "\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u798f\u6c38\u8857\u9053\u798f\u6c38\u4e2d\u5fc3\u533a\u805a\u798f\u56ed\u4e00\u5df78\u53f7",
+      "attentionFlag": 2,
+      "attentionFlagName": "\u672a\u5173\u6ce8",
+      "buildAddr": "",
+      "evId": "9151",
+      "evOrder": "",
+      "name": "\u90ed\u8d3a\u658c",
+      "projectId": "1969",
+      "regCode": "31104403002008008448",
+      "wtCode": "00000002"
+    },
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=AAA use_time: 0.049002647399902344 ms ------
+request_params:{'evId': 'aaa', 'evName': 'AAA'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+------ Success GET http://172.16.2.74:8080/elevator/getEvDetail?evId=aaa&evName=BBB use_time: 0.036002159118652344 ms ------
+request_params:{'evId': 'aaa', 'evName': 'BBB'}
+{
+  "code": 0,
+  "message": "\u64cd\u4f5c\u6210\u529f",
+  "obj": {
+    "evTagList": null,
+    "ev_info": null,
+    "ev_status": null
+  },
+  "tokenStr": "MjE5OTIwMzA4Mjk4MDk2NjQwX3Rva2VuXywsLDE1NDU2MTYwMTkzNjM="
+}
+
+****************** END crossTestParams ******************
