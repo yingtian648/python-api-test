@@ -18,4 +18,4 @@ case_apis = {
 }
 
 if __name__ == '__main__':
-    build_test_case(case_apis, model_normal)  # model_normal是生成测试用例json文件的基础格式标准[可自行定义]
+    build_test_case(case_apis, model_normal_post_json)  # model_normal是生成测试用例json文件的模板[可自行定义]
